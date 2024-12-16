@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent  py-5">
+        <div class="container">
+          <a class="navbar-brand text-white d-flex justify-content-center align-items-center gap-2" href="#"><img src="images/logo.png" alt=""><div class="logo d-inline-block">
+            <h1 class="h6 my-0">Weather</h1>
+            <small>tagline goes here</small>
+          </div></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-3">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contacts</a>
+              </li>
+              
+             
+            </ul>
+            
+            
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="container">
+            <div class="findLocation">
+                <div class="input-group px-1 py-1 mb-3 rounded-5">
+                    <input type="text" id="search" class="form-control py-2 bg-transparent border-0 " placeholder="Find your location..." aria-describedby="button-addon2">
+                    <button class="btn btn-primary rounded-pill px-4" type="button" id="button-addon2">Find</button>
+                  </div>
+                  
+            </div>
+        </div>
+      </div>
+      <div class="forcast ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 p-0">
+                    <div class="today">
+                        <div class="date d-flex justify-content-between "><span class="day"></span><span class="month"></span></div>
+                        <div class="forcast-content">
+                            <div class="location">
+                                <span class="city"></span>
+                            </div>
+                            <div class="deg d-flex justify-content-between align-items-center">
+                                <div class="degree"><span id="todayDeg"></span><sup>o</sup><span>C</span></div>
+                                <span id="dayTime"><img src="" alt=""></span>
+                            </div>
+                            <div id="sky" class="text-primary"></div>
+                            <div class="conditions text-secondary">
+                                <span class="me-3"><i class="fa-solid fa-umbrella fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i><span id="humidty"></span></span>
+                                <span class="me-3"><i class="fa-solid fa-wind"></i><span id="wind"></span></span>
+                                <span><i class="fa-regular fa-compass"></i><span id="windDir"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-0">
+                    <div class="tomorrow">
+                        <div class="date d-flex justify-content-center align-items-center "><span id="tomorrowDay"></span></div>
+                        <div class="forcast-content text-center">
+                            <div class="sun d-flex align-items-center justify-content-center">
+                                <span id="tomorrowCon"><img src="" alt=""></span>
+                            </div>
+                            <div class="deg text-center">
+                                <p><span id="tomorrowUpper"></span> <sup>o</sup> <span>c</span></p>
+                                <p ><span id="tomorrowLower"></span> <sup>o</sup></p>
+                            </div>
+                             <p class="text-center" id="tomorrowSky"></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-0">
+                    <div class="dayAfter">
+                        <div class="date d-flex justify-content-center align-items-center "><span id="dayAfterDay"></span></div>
+                        <div class="forcast-content text-center">
+                            <div class="sun d-flex align-items-center justify-content-center">
+                                <span id="dayAfterCon"><img src="" alt=""></span>
+                            </div>
+                            <div class="deg text-center">
+                                <p><span id="dayAfterUpper"></span> <sup>o</sup> <span>c</span></p>
+                                <p ><span id="dayAfterLower"></span> <sup>o</sup></p>
+                            </div>
+                             <p class="text-center" id="dayAfterSky"></p>
+                            
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+      </div>
+      <footer >
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="input-group px-1 py-1  w-60 rounded-5">
+                    <input type="text" class="form-control py-2 bg-transparent border-0" placeholder="Enter your url email..." >
+                    <button class="btn btn-primary rounded-pill px-4" type="button" id="button-addon2">Find</button>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="social-links d-flex gap-1">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </footer>
+      
+    <!-- js -->
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/main.js"></script>
+</body>
+</html>

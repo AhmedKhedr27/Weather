@@ -1,0 +1,119 @@
+:root{
+    --bs-body-color :white;
+}
+body{
+    background-color: #1E202B;
+    
+}
+nav li a{
+    display: inline-block;
+    padding: 5px 25px !important;
+    border: solid 2px #1E202B !important;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+nav li a:hover{
+    border: solid 2px  #0d6efd !important;
+    color: #0d6efd !important;
+    
+}
+.active{
+    border: solid 2px  #0d6efd !important;
+    color: #0d6efd !important;
+
+}
+small{
+    font-size: 11px;
+}
+.hero{
+    padding: 70px 0;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.input-group{
+    background-color: #1E202B ;
+    margin-bottom: 180px !important;
+}
+.date{
+    padding: 10px;
+    background-color: #2D303D;
+}
+.forcast-content{
+    padding: 30px 20px;
+    background-color: #323544;
+}
+.degree{
+    font-size: 3.4285714286rem;;
+    font-weight: 700;
+}
+#todayDeg{
+    font-size: 4.4285714286rem;;
+    font-weight: 700;
+}
+
+#sky{
+    margin: 20px 0;
+}
+.forcast .container{
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+.tomorrow{
+    height: 100%;
+    background-color: #262936;
+}
+.tomorrow .date{
+    background-color: #222530;
+}
+.tomorrow .forcast-content{
+    padding: 50px 20px 10px;
+    background-color: #262936;
+}
+.dayAfter{
+    height: 100%;
+    background-color: #323544;
+}
+.dayAfter .date{
+    background-color: #2D303D;
+}
+.dayAfter .forcast-content{
+    padding: 50px 20px 10px;
+    background-color: #323544;
+}
+.sun{
+    margin-bottom: 20px;
+}
+.cloud{
+    margin: 20px 0;
+}
+footer{
+    padding: 50px 0;
+    background-color: #262936;
+}
+footer .input-group{
+    margin-bottom: 30px !important;
+}
+footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1E202B;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
